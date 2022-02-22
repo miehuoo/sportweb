@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports equipment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<style>
+		.carousel-item{
+			height: 25rem;
+		}
+		.carousel-item .container{
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			padding: 0 20px 50px 20px;
+			color: white;
+			/* background-color: #a1a8b5; */
+		}
+		.carousel-item .container p{
+			opacity: 1;	
+			color: black;
+		}
+		.carousel-item .overlay-image{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			background-position: center;
+			background-size: cover;
+			opacity: .95;
+		}
+		.card-area .row .col .card .card-body .card-text{	
+			text-overflow:ellipsis; 
+		}
+		.addV{
+			right: 20px;
+			top: 100px;
+		}
+	</style>
+
+</head>
+<body style="background-image: url(/img/bg1.jpg);">
+	<div class="addV position-fixed" style="z-index: 20;">
+		<div class="btn btn-warning">Addvertiser</div>
+	</div>
+    <div class="container " style="background-color: white;">
+		<ul class="nav nav-pills justify-content-end m-4 pt-2">
+			<li class="nav-item ">
+				<a class="nav-link active" aria-current="page" href="#">Active</a>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="#">Action</a></li>
+					<li><a class="dropdown-item" href="#">Another action</a></li>
+					<li><a class="dropdown-item" href="#">Something else here</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">Separated link</a></li>
+				</ul>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Link</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="#">Contact</a>
+			</li>
+		</ul>
+		<div id="carouselExampleSlidesOnly" class="carousel carousel-dark slide mt-3 mb-3"  data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item  active" data-bs-interval="4000">
+					<div class="overlay-image" style="background-image: url(img/sport.jpg);" ></div>
+					<!-- <div class="container">
+						<h1>นึกถึงอุปกรณ์กีฬานึกถึงเรา</h1>
+						<p class="fs-5 fw-bold">ร้าน ธันวาอุปกรณ์การกีฬาของเรา นั่นขายส่งสินค้าเกี่ยวกับกีฬามามากกว่า 10 ปี ซึ่งสินค้าเรานั่นมีสินค้าหลายเกรดด้วยกัน และก็มีทั้งแบบคุณภาพดีราคาถูก-แพง ให้ลูกค้าได้เลือกสรร และยังสามารถส่งได้ถึงบ้านท่านอีกด้วย</p>
+						<a href="#" class="btn btn-md btn-primary">Add Line</a>
+					</div> -->
+				</div>
+				<div class="carousel-item" data-bs-interval="3000">
+					<div class="overlay-image" style="background-image: url(img/sport2.png);" ></div>
+					<!-- <div class="container">
+						<p class="fs-4 fw-bold">หากสนใจสมัครสมาชิกกับเรา</p>
+						<a href="" class="btn btn-md btn-primary">Click</a>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<div class="description text-center">
+			<h2>ยินดีต้อนรับสู่ DD-shop</h2>
+			<p>ร้านเราจำหน่าย อุปกรณ์การกีฬาคุณภาพดี ราคาย่อมเยา ในเกรดพรีเมี่ยม อย่างที่เราคัดสรรมาให้อย่างดี ซึ่งสินค้าเรานั่นมีสินค้าหลายเกรดด้วยกัน ด้วยประสบการณ์การค้าขายเกี่ยวกับอุปกรณ์การกีฬามากว่า 10 ปี คุณภาพดีราคาถูก ไม่ว่าจะเป็นลูกฟุตบอล ลูกวอลเลย์บอล ลูกบาสเกตบอล  เสื้อซ้อมกีฬา เสื้อตัวสำรอง เสื้อคลุมนักกีฬา เอี๊ยมกีฬา ลูกตะกร้อ ลูกแบดมินตัน เสื้อผ้า ชุดกีฬา ไม้แบดมินตัน กระเป๋าแบดมินตัน ไม้เบสบอล เอ็นแบดมินตัน ที่พันด้ามแบดมินตัน ของดี ราคาถูก ใช้กันนานๆ ผู้ให้สบายใจ  ผู้รับมีความสุข ช่องทางการติดต่อ รับโปรโมชั่นพิเศษเมื่อ Add line</p>
+			<a href="#" class="btn btn-md btn-primary">Add line</a>
+		</div>
+		<div class="card-area container">
+			<div class="row mt-4">
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="/img/ball.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title fw-bold">ลูกฟุตบอล</h5>
+							<p class="card-text">ขอเสนออุปกรณ์ลูกหนัง Mikasa คุณภาพดีเกรดแข่งขันราคาพิเศษ ทั้งชนิด PU และ PVC เป็นอุปกรณ์ลูกหนังคุณภาพดีราคาโรงงาน สำหรับแข่งขันกีฬา หรือ ซ้อมกีฬา  คุณภาพของอุปกรณ์ลูกหนังเป็นไปตามมาตรฐานระดับสากล</p>
+							<a href="#" class="btn btn-primary">สั่งซื้อ</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="/img/bas.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">บาสเก็ตบอล</h5>
+							<p class="card-text">ลูกบาสเก็ตบอลชนิดแข่งขันหรือสำหรับซ้อมได้เป็นอย่างดี ขนาดมาตรฐานเบอร์ 7  ทำด้วย PU หนังอย่างดี คุณภาพสูง มีความทนทานสูง  เหมาะกับผู้เล่นตั้งแต่ละดับ 5 ขวบขึ้นไป</p>
+							<a href="#" class="btn btn-primary">สั่งซื้อ</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="/img/wal.jpg" class="card-img-top" alt="...">
+						<div class="card-body overflow-auto h-50" >
+							<h5 class="card-title">วอลเล่บอล</h5>
+							<p class="card-text overflow-auto" >หนัง PVC คุณภาพสูง ทนทาน กันน้ำ  ผิวสัมผัสด้านนอกเรียบ นุ่ม เบา กระชับมือ ยางในเสริมด้วยโพลีเอสเตอร์อย่างดี</p>
+							<a href="#" class="btn btn-primary">สั่งซื้อ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4">
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="/img/costume.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">เสื้อฟุตบอล</h5>
+							<p class="card-text">ชุดบอล ชุดเซต แมนยู ลิเวอร์พูล NEW 2021-22 ผู้ชาย เสื้อพร้อมกางเกง
+								แมนยู ลิเวอร์พูลใหม่สุดฮิต สุดน่ารัก มีปลายทาง</p>
+							<a href="#" class="btn btn-primary">สั่งซื้อ</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="/img/set1.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">ชุด SET อุปกรณ์กีฬา งบ 5,000 บาท</h5>
+							<p class="card-text">
+								มีรายการสินค้าดังนี้
+								ลูกฟุตบอล  4 ลูก
+								ลูกบาสเกตบอล 4 ลูก
+								ลูกวอลเล่บอล  4 ลูก
+								ลูกตะกร้อ 5 ลูก
+								ไม้แบดมินตัน  8 ไม้
+								ไม้ปิงปอง 6 ไม้
+								ลูกปิงปอง 2 หลอด(1หลอดมี 6 ลูก)
+								ลูกแบด 2 หลอด (1หลอดมี 12 ลูก)
+								เชือกกระโดด 2 เส้น
+								แถมฟรีที่สูบลมแบบมือจำนวน 1 อัน
+								แถมฟรีตาข่ายใส่ลุกบอลหมู่ใหญ่ (ใส่ได้20ลูก) 1 อัน
+								ส่งฟรีทั่วประเทศ
+								[12:01 PM]
+								ชุด SET อุปกรณ์กีฬา งบ 5,000 บาท</p>
+							<a href="#" class="btn btn-primary">สั่งซื้อ</a>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card" style="width: 18rem;">
+						<img src="/img/set2.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">รองเท้าฟุตบอล</h5>
+							<p class="card-text">เป็นทางการ Nike ไนกี้ Phantom Vision Elite DF FG รองเท้าสตั๊ดรองเท้าฟุตบอลชายรองเท้าผ้าใบสนามหญ้า 1</p>
+							<a href="#" class="btn btn-primary">สั่งซื้อ</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+    </div> 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script>
+		let navItem = document.querySelectorAll('ul.nav li.nav-item a.nav-link');
+		navItem.forEach( nav => nav.addEventListener('click', () => {
+			navItem.forEach(ele => ele.classList.remove('active'));
+			nav.classList.add('active');
+		}))
+	</script>
+</body>
+</html>
